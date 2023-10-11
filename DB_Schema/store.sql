@@ -1,24 +1,21 @@
-CREATE DATABASE IF NOT EXISTS stock_tracker;
-USE stock_tracker;
+CREATE DATABASE IF NOT EXISTS sts;
+USE sts;
 
-CREATE TABLE `stock_tracker`.`store_inventory_2023` (
+CREATE TABLE `sts`.`store_inventory_2023` (
   `id` INT NOT NULL,
   `prodName` VARCHAR(40) NOT NULL,
   `category` VARCHAR(40) NOT NULL,
   `brand` VARCHAR(40) NULL,
-  `unitPrice` DECIMAL(20) NOT NULL,
-  `qtyAvailable` DECIMAL(10) NULL,
-  `qtyRequired` DECIMAL(10) NULL,
+  `unit_price` DECIMAL(20) NOT NULL,
+  `qty_available` DECIMAL(10) NULL,
+  `qty_required` DECIMAL(10) NULL,
   `supplier` VARCHAR(40) NULL,
-  `shelfNo` INT NULL,
-  `discountPercentage` DECIMAL(10) NULL,
-  `lastOrderedDate` DATETIME NULL,
-  `lastReceivedDate` DATETIME NULL,
-  `salesHistory` DATETIME NULL,
-  `usageHistory` DATETIME NULL,
-  `usageQty` INT NULL,
-  `shelfLife` INT NULL,
+  `shelf_no` INT NULL,
+  `discount_percentage` DECIMAL(10) NULL,
+  `last_ordered_date` DATETIME NULL,
+  `sales_history` DATETIME NULL,
+  `shelf_life` INT NULL,
   `handler` VARCHAR(40) NULL,
   `invoice` BLOB NULL,
-  `remarks` VARCHAR(40) NULL,
+  `remarks` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
