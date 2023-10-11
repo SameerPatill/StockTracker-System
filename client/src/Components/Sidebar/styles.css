@@ -21,6 +21,10 @@ nav div ul ul li a{
 .sidebar.active{
   width: 60px;
 }
+
+.sub-nav{
+  margin-left: 20px;
+}
 .sidebar .logo-details{
   height: 80px;
   display: flex;
