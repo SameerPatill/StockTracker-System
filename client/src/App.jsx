@@ -20,7 +20,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <SideBar />
+        {/* <SideBar /> */}
         <NavBar />
         <Routes>
           <Route path="/dashboard" element={<Dashboard />}>
