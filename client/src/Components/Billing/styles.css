@@ -1,0 +1,97 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Main Container */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    /* margin-top: 80px; */
+    /* Increased top margin for spacing */
+    margin-bottom: 50px;
+    padding: 40px;
+}
+
+/* Styles for the Bill Header */
+.bill-header {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 30px;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+/* Styles for Company Details and Date & Time Section */
+.company-date-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    margin-left: 45px;
+}
+
+.company-details,
+.date-time-details {
+    width: 48%;
+}
+
+/* Styles for the Company Details and Date & Time text */
+.company-details h4,
+.date-time-details h4 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.address,
+.date-time {
+    font-size: 22px;
+}
+
+/* Custom Styles for Inventory Details */
+.bill-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bill-table th,
+.bill-table td {
+    border: 2px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.bill-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+/* Styles for Total Cost */
+.bill-total {
+    font-weight: bold;
+    margin-top: 20px;
+    text-align: right;
+    font-size: 28px;
+}
+
+/* Styles for the Items to be Ordered section */
+.order-list {
+    list-style: none;
+    padding: 0;
+}
+
+.order-list li {
+    margin-bottom: 20px;
+    border: 2px solid #ddd;
+    padding: 20px;
+    background-color: #f9f9f9;
+    font-size: 24px;
+}
+
+/* Download PDF Button */
+.download-pdf-button {
+    margin-top: 30px;
+}
