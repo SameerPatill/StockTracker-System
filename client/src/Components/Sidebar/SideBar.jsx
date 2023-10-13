@@ -1,20 +1,17 @@
 import React, { useState } from 'react'
 import './styles.css'
 
-const SideBar = () => {
+const SideBar = ({side_toggle}) => {
 
     const [sub_nav, setsub_nav] = useState(false)
 
     function toggleSubNav() {
-        if (sub_nav) {
-            setsub_nav(false);
-        } else {
-            setsub_nav(true);
-        }
+            setsub_nav(!sub_nav);
+        
     }
 
     return (
-        <div className="sidebar">
+        <div className='sidebar'>
             <div className="logo-details">
                 <i className='bx bxl-c-plus-plus'></i>
                 <span className="logo_name">Inventory</span>

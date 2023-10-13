@@ -11,7 +11,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <SideBar />
+        {/* <SideBar /> */}
         <NavBar />
         <Routes>
           <Route path="/additem" element={<AddItem />}>
