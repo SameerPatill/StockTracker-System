@@ -15,11 +15,24 @@
   transition: all 0.5s ease;
 }
 
+.sidebar-toggle{
+  width: 60px;
+}
+
+.home-section-toggle{
+  width: calc(100% - 60px);
+  left: 60px;
+}
+
 nav div ul ul li a{
   font-size: 780;
 }
 .sidebar.active{
   width: 60px;
+}
+
+.sub-nav{
+  margin-left: 20px;
 }
 .sidebar .logo-details{
   height: 80px;
