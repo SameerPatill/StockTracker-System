@@ -1,0 +1,213 @@
+/* Include the following CSS in a separate CSS file, e.g., loginStyle.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.bgimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: url('./assets/bgimg1.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.form-data {
+  background-color: transparent;
+  box-shadow: 0 0 0 transparent;
+}
+
+.wrapper {
+  position: relative;
+  width: 400px;
+  background: transparent;
+  backdrop-filter: blur(4px);
+  border-radius: 20px;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 30px rgba(214, 214, 214, 0.5);
+  display: flex;
+  flex-direction: column;
+  /* Adjusted to display items top to bottom */
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: transform 0.5s ease, height 0.2s ease;
+}
+
+.wrapper.active-popup {
+  transform: scale(1);
+}
+
+.wrapper.active {
+  height: 640px;
+  /* Adjusted height for the expanded form */
+}
+
+.form-box {
+  width: 100%;
+  padding: 40px;
+}
+
+.form-box h2 {
+  font-size: 2em;
+  color: #fff;
+  text-align: center;
+  font-weight: 600;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  border-bottom: 2px solid #fff;
+  margin: 22px 0;
+  color: #fff;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  font-size: 1em;
+  font-weight: 500;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: -5px;
+}
+
+.input-box .icon {
+  position: absolute;
+  right: 8px;
+  font-size: 1.2em;
+  color: #fff;
+  line-height: 57px;
+}
+
+.input-box select {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-weight: 600;
+  padding: 0 35px 0 5px;
+}
+
+.form-box.register .input-box select {
+  background-color: transparent;
+  color: #fff;
+}
+
+.form-box.register .input-box select option {
+  color: #000;
+}
+
+
+.remember-forgot {
+  font-size: 0.9em;
+  color: #fff;
+  font-weight: 500;
+  margin: -15px 0 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-forgot label input {
+  accent-color: #fff;
+  margin-right: 3px;
+}
+
+.remember-forgot a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.remember-forgot a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1em;
+  color: #02071d;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background: white;
+  color: #02071d;
+}
+
+.login-register {
+  font-size: 0.9em;
+  color: #fff;
+  text-align: center;
+  font-weight: 500;
+  margin: 25px 0 10px;
+}
+
+.login-register p a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-register p a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.dropbtn {
+  background-color: #fff;
+  color: #02071d;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 6px;
+  font-size: 1em;
+}
+
+.dropdown-content a:hover {
+  background-color: transparent;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

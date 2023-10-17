@@ -18,7 +18,7 @@ const SideBar = ({side_toggle}) => {
             </div>
             <ul className="nav-links" >
                 <li>
-                    <a href="#" className="active">
+                    <a href="/dashboard" className="active">
                         <i className='bx bx-grid-alt' ></i>
                         <span className="links_name">Dashboard</span>
                     </a>
@@ -43,26 +43,26 @@ const SideBar = ({side_toggle}) => {
                 </li>
                 {sub_nav ? <div className='sub-nav'>
                     <ul className="nav-links" style={{ 'margin-top': '0px' }}>
-                        <li><a href="#">
+                        <li><a href="/additemh">
                             <i class='bx bx-plus-circle'></i>
                             <span className="links_name">Add Item</span>
                         </a></li>
 
                         <li>
-                            <a href="#">
+                            <a href="/updateitemh">
                                 <i class='bx bxs-edit-alt'></i>
                                 <span className="links_name">Update Stock</span>
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="/deleteitemh">
                                 <i class='bx bx-minus-circle'></i>
                                 <span className="links_name">Delete an item</span>
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="/viewitemh">
                                 <i class='bx bx-list-ul' ></i>
                                 <span className="links_name">View stock</span>
                             </a>

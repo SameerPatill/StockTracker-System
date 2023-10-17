@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/loginStyle.css">
+</head>
+
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+    crossorigin="anonymous"></script>
+
+  <div class="wrapper">
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" id="login-email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-open"></ion-icon>
+          </span>
+          <input type="password" id="login-pass" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox" id="login-remember">Remember me</label>
+          <a href="#">Forgot Password?</a>
+        </div>
+        <button type="submit" class="btn" id="login">Login</button>
+        <div class="login-register">
+          <p>Don't have an account? <a href="#" class="register-link" onclick="clearLogin()"> Register</a></p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="person"></ion-icon>
+          </span>
+          <input type="text" id="username" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="mail"></ion-icon>
+          </span>
+          <input type="email" id="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon">
+            <ion-icon name="lock-open"></ion-icon>
+          </span>
+          <input type="password" id="pass" required>
+          <label>Password</label>
+        </div>
+        <div class="input-box">
+          <select id="Inventory-Type" required>
+            <option value="" disabled selected>Inventory Type</option>
+            <option value="type1">Hospital</option>
+            <option value="type2">Super Market</option>
+            <option value="type3">Sample</option>
+            <!-- Add more countries as needed -->
+          </select>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms and conditions</label>
+        </div>
+        <button type="submit" class="btn" id="register">Register</button>
+        <div class="login-register">
+          <p>Already have an account? <a href="#" class="login-link" onclick="clearRegister()"> Login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/loginScript.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
